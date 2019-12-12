@@ -1,0 +1,11 @@
+
+
+// show all consumer groups
+kafka-consumer-groups --bootstrap-server localhost:9092 --group my-fourth_application --describe
+
+
+// reset consumer groups, shift by -2
+kafka-consumer-groups --bootstrap-server localhost:9092 --group my-first-application --reset-offsets --shift-by -2 --execute --topic first_topic
+
+
+
